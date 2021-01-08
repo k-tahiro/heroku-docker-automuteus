@@ -25,5 +25,5 @@ Here is the correspondence of these components.
 
 All of these heroku services can be used as free!
 
-But web dyno goes to sleep when there is no access to application.
+But web dyno goes to sleep when there is no access to application.  
 To prevent this behavier, we can use other services to request application periodically.
