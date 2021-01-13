@@ -1,4 +1,5 @@
 # heroku-docker-automuteus
+
 Unofficial AutoMuteUs docker image for Heroku deployment
 
 ## How to use
@@ -7,6 +8,8 @@ Unofficial AutoMuteUs docker image for Heroku deployment
 
 - Configured [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 - heroku-config plugin (will be installed automatically)
+- [heroku billing setting](https://heroku.com/verify)
+- [Docker](https://docs.docker.com/get-docker/)
 
 ### Steps
 
