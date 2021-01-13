@@ -43,6 +43,7 @@ function update_app() {
   fi
   heroku config:push -a "${app_name}"
 
+  heroku container:login
   heroku container:push --recursive -a "${app_name}"
   heroku container:release web -a "${app_name}"
 }
