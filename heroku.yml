@@ -9,7 +9,7 @@ setup:
     GALACTUS_PORT: "5858"
 build:
   docker:
-    web: web/Dockerfile.web
+    web: web/Dockerfile
   config:
     AUTOMUTEUS_TAG: latest
     GALACTUS_TAG: latest
