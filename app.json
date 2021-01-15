@@ -23,7 +23,8 @@
     "GALACTUS_PORT": {
       "description": "Galactus's port",
       "value": "5858"
-    }
+    },
+    "HEROKU_APP_NAME": {}
   },
   "stack": "container"
 }
