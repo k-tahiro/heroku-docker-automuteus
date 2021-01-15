@@ -1,6 +1,8 @@
 # heroku-docker-automuteus
 Unofficial AutoMuteUs docker image for Heroku deployment
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## How to use
 
 ### Requirements

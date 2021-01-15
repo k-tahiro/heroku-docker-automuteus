@@ -1,0 +1,12 @@
+setup:
+  addons:
+  - plan: heroku-postgresql:hobby-dev
+  - plan: heroku-redis:hobby-dev
+  config:
+    DISCORD_BOT_TOKEN: 
+build:
+  docker:
+    web: web/Dockerfile.web
+  config:
+    AUTOMUTEUS_TAG: latest
+    GALACTUS_TAG: latest
