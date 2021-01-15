@@ -7,5 +7,11 @@
       "plan": "heroku-redis:hobby-dev"
     }
   ],
+  "env": {
+    "DISCORD_BOT_TOKEN": {
+      "description": "Token for Discord",
+      "value": ""
+    }
+  },
   "stack": "container"
 }
