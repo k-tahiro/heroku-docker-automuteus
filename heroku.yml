@@ -7,7 +7,6 @@ setup:
     BROKER_PORT: "8123"
     GALACTUS_ADDR: "http://localhost:5858"
     GALACTUS_PORT: "5858"
-    HEROKU_APP_NAME:
 build:
   docker:
     web: web/Dockerfile
