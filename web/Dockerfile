@@ -12,6 +12,7 @@ RUN apk update \
 
 COPY nginx.conf.erb /usr/local/openresty/nginx/conf/
 COPY supervisord.conf /etc/supervisord.conf
+COPY run.sh .
 
 EXPOSE 80
 CMD ["sh", "run.sh"]
