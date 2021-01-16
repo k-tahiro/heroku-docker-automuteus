@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -ex
 
 export POSTGRES_ADDR="$(echo ${DATABASE_URL} | cut -d@ -f2)"
