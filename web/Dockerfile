@@ -8,7 +8,7 @@ COPY --from=automuteus /app /automuteus
 COPY --from=galactus /app /galactus
 
 RUN apk update \
-  && apk --no-cache add bash nodejs ruby supervisor \
+  && apk --no-cache add bash curl nodejs ruby supervisor \
   && curl https://cli-assets.heroku.com/install.sh | bash
 
 COPY nginx.conf.erb /usr/local/openresty/nginx/conf/
