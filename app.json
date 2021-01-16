@@ -11,18 +11,6 @@
     "DISCORD_BOT_TOKEN": {
       "description": "Token for Discord",
       "value": ""
-    },
-    "BROKER_PORT": {
-      "description": "Broker's port",
-      "value": "8123"
-    },
-    "GALACTUS_ADDR": {
-      "description": "Galactus's address",
-      "value": "http://localhost:5858"
-    },
-    "GALACTUS_PORT": {
-      "description": "Galactus's port",
-      "value": "5858"
     }
   },
   "stack": "container"

@@ -4,9 +4,6 @@ setup:
   - plan: heroku-redis:hobby-dev
   config:
     DISCORD_BOT_TOKEN: 
-    BROKER_PORT: "8123"
-    GALACTUS_ADDR: "http://localhost:5858"
-    GALACTUS_PORT: "5858"
 build:
   docker:
     web: web/Dockerfile
