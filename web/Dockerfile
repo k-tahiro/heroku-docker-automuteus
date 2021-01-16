@@ -19,4 +19,4 @@ ENV GALACTUS_ADDR="http://localhost:5858"
 ENV GALACTUS_PORT="5858"
 
 EXPOSE 80
-CMD ["bash", "run.sh"]
+CMD ["sh", "run.sh"]
