@@ -1,5 +1,5 @@
-ARG GALACTUS_TAG=latest
 ARG AUTOMUTEUS_TAG=latest
+ARG GALACTUS_TAG=latest
 FROM denverquane/amongusdiscord:${AUTOMUTEUS_TAG} AS automuteus
 FROM automuteus/galactus:${GALACTUS_TAG} AS galactus
 
