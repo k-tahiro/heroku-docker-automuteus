@@ -1,17 +1,16 @@
 # heroku-docker-automuteus
 Unofficial AutoMuteUs docker image for Heroku deployment
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## How to use
 
-### Requirements
-
-- Configured [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
-- heroku-config plugin (will be installed automatically)
-
-### Steps
-
-1. Create `.env` file in this directory. Basically you can copy `sample.env` file and edit `DISCORD_BOT_TOKEN`.
-2. Run `$ ./deploy.sh APP_NAME`. You should specify you own `APP_NAME`. For example, `$ ./deploy.sh my-own-muteus`.
+1. Click `Deploy to Heroku` button.
+2. Enter your own App name.
+3. Enter 2 environment variables.
+   - `DISCORD_BOT_TOKEN`: Token for Discord Bot.
+   - `HEROKU_APP_NAME`: App name. Please copy from the app name you entered at step 2.
+4. Click `Deploy app`.
 
 ## Structure
 
