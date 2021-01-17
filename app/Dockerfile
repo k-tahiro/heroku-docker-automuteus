@@ -13,7 +13,7 @@ RUN apk update \
 
 COPY nginx.conf.erb /usr/local/openresty/nginx/conf/
 COPY supervisord.conf /etc/supervisord.conf
-COPY run.sh .
+COPY set_config.sh .
 
 ENV BROKER_PORT="8123"
 ENV GALACTUS_ADDR="http://localhost:5858"

@@ -14,4 +14,4 @@ build:
 release:
   image: web
   command:
-    - ./run.sh
+    - ./set_config.sh
