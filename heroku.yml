@@ -11,3 +11,7 @@ build:
   config:
     AUTOMUTEUS_TAG: latest
     GALACTUS_TAG: latest
+release:
+  image: web
+  command:
+    - ./run.sh
