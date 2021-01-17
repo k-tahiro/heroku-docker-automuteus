@@ -7,7 +7,7 @@ setup:
     HEROKU_APP_NAME:
 build:
   docker:
-    web: web/Dockerfile
+    web: app/Dockerfile
   config:
     AUTOMUTEUS_TAG: latest
     GALACTUS_TAG: latest
