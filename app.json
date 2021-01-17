@@ -11,10 +11,6 @@
     "DISCORD_BOT_TOKEN": {
       "description": "Token for Discord",
       "value": ""
-    },
-    "HEROKU_APP_NAME": {
-      "description": "PLEASE COPY APP NAME HERE",
-      "value": ""
     }
   },
   "stack": "container"

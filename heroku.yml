@@ -4,7 +4,6 @@ setup:
   - plan: heroku-redis:hobby-dev
   config:
     DISCORD_BOT_TOKEN:
-    HEROKU_APP_NAME:
 build:
   docker:
     web: app/Dockerfile
