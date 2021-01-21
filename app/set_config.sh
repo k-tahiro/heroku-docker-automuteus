@@ -1,6 +1,8 @@
 #!/bin/sh
 set -ex
 
+env
+
 APP_ID="$(echo "${HEROKU_RELEASE_STREAM_URL}" | cut -d/ -f6)"
 
 heroku config:set "HOST=$(heroku apps:info -s -a ${APP_ID} | grep web_url | cut -d= -f2)" -a "${APP_ID}"
