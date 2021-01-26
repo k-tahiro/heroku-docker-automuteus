@@ -4,10 +4,13 @@ setup:
   - plan: heroku-redis:hobby-dev
   config:
     DISCORD_BOT_TOKEN:
-    HEROKU_APP_NAME:
 build:
   docker:
-    web: web/Dockerfile
+    web: app/Dockerfile
   config:
     AUTOMUTEUS_TAG: latest
     GALACTUS_TAG: latest
+release:
+  image: web
+  command:
+    - ./set_config.sh
