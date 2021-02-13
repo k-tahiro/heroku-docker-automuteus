@@ -19,6 +19,7 @@ Here is the correspondence of these components.
 
 - automuteus: web dyno
 - galactus: same as automuteus's web dyno
+- wingman: same as automuteus's web dyno
 - redis: heroku addon
 - postgres: heroku addon
 
