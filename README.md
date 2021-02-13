@@ -1,6 +1,8 @@
 # heroku-docker-automuteus
 Unofficial AutoMuteUs docker image for Heroku deployment
 
+Forked from [k-tahiro/heroku-docker-automuteus](https://github.com/k-tahiro/heroku-docker-automuteus)
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## How to use
@@ -16,6 +18,8 @@ Unofficial AutoMuteUs docker image for Heroku deployment
 
 There are 4 components to deploy AutoMuteUs.
 Here is the correspondence of these components.
+
+Difference between original one and this is supported automuteus-v7 and completed custom env var implement 👍
 
 - automuteus: web dyno
 - galactus: same as automuteus's web dyno
