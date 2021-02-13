@@ -19,7 +19,7 @@ Forked from [k-tahiro/heroku-docker-automuteus](https://github.com/k-tahiro/hero
 There are 4 components to deploy AutoMuteUs.
 Here is the correspondence of these components.
 
-Difference between original one and this is supported automuteus-v7 and completed custom env var implement 👍
+Difference between original one and this is supported automuteus-v7 👍
 
 - automuteus: web dyno
 - galactus: same as automuteus's web dyno
