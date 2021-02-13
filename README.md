@@ -1,3 +1,5 @@
+# This supports latest automuteus-v7 build :heart_eyes:
+
 # heroku-docker-automuteus
 Unofficial AutoMuteUs docker image for Heroku deployment
 
