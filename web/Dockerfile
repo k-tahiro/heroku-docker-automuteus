@@ -10,9 +10,9 @@ FROM openresty/openresty:alpine
 # setup automuteus
 COPY --from=automuteus /app /automuteus
 RUN true
-COPY --from=automuteus /app/locales/ /automuteus/locales
+COPY --from=automuteus /locales/ /automuteus/locales
 RUN true
-COPY --from=automuteus /app/storage/postgres.sql /automuteus/storage/postgres.sql
+COPY --from=automuteus /storage/postgres.sql /automuteus/storage/postgres.sql
 RUN true
 VOLUME [/automuteus/logs]
 
