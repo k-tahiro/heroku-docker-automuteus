@@ -14,7 +14,7 @@ COPY --from=automuteus /app/locales/ /automuteus/locales
 RUN true
 COPY --from=automuteus /app/storage/postgres.sql /automuteus/storage/postgres.sql
 RUN true
-ENV LOCAL_PATH=/automuteus/locales LOG_PATH=/automuteus/logs
+ENV LOCALE_PATH=/automuteus/locales LOG_PATH=/automuteus/logs
 VOLUME [/automuteus/logs]
 
 # setup galactus
