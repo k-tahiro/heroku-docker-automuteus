@@ -8,8 +8,8 @@ FROM automuteus/wingman:${WINGMAN_TAG} AS wingman
 
 # setup automuteus
 COPY --from=automuteus /app /automuteus
-COPY --from=automuteus /locales /automuteus/locales
-COPY --from=automuteus /storage/postgres.sql /automuteus/storage/postgres.sql
+COPY --from=automuteus /app/locales /automuteus/locales
+COPY --from=automuteus /app/storage/postgres.sql /automuteus/storage/postgres.sql
 VOLUME [/automuteus/logs]
 
 # setup galactus
