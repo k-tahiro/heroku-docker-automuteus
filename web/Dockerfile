@@ -5,6 +5,7 @@ ARG WINGMAN_TAG=main
 FROM denverquane/amongusdiscord:${AUTOMUTEUS_TAG} AS automuteus
 FROM automuteus/galactus:${GALACTUS_TAG} AS galactus
 FROM automuteus/wingman:${WINGMAN_TAG} AS wingman
+FROM automuteus/wingman:${WINGMAN_TAG}
 
 # setup automuteus
 COPY --from=automuteus /app /automuteus
