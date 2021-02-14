@@ -22,8 +22,6 @@ COPY --from=wingman /app /wingman
 FROM openresty/openresty:alpine
 COPY nginx.conf.erb /usr/local/openresty/nginx/conf/
 
-
-
 # setup supervisord
 RUN apk update \
   && apk --no-cache add ruby supervisor
