@@ -9,7 +9,7 @@ FROM automuteus/wingman:${WINGMAN_TAG}
 
 # setup automuteus
 COPY --from=automuteus /app /automuteus
-COPY --from=automuteus /app/locales /automuteus/locales
+COPY --from=automuteus /app/locales/ /automuteus/locales/
 COPY --from=automuteus /app/storage/postgres.sql /automuteus/storage/postgres.sql
 VOLUME [/automuteus/logs]
 
