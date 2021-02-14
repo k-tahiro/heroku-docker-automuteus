@@ -9,5 +9,6 @@ build:
   docker:
     web: web/Dockerfile
   config:
-    AUTOMUTEUS_TAG: latest
-    GALACTUS_TAG: latest
+    AUTOMUTEUS_TAG: theGreatSchism
+    GALACTUS_TAG: theGreatSchism
+    WINGMAN_TAG: main

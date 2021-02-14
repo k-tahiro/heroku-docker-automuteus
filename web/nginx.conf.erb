@@ -20,7 +20,7 @@ http {
     proxy_set_header Connection         "upgrade";
     
     location / {
-        proxy_pass http://localhost:<%= ENV["BROKER_PORT"] || 8123 %>/;
+        proxy_pass http://localhost:<%= ENV["WINGMAN_PORT"] || 8123 %>/;
     }
   }
 }
