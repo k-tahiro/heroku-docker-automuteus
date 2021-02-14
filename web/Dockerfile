@@ -5,13 +5,12 @@ ARG WINGMAN_TAG=main
 FROM denverquane/amongusdiscord:${AUTOMUTEUS_TAG} AS automuteus
 FROM automuteus/galactus:${GALACTUS_TAG} AS galactus
 FROM automuteus/wingman:${WINGMAN_TAG} AS wingman
-FROM automuteus/wingman:${WINGMAN_TAG}
+FROM openresty/openresty:alpine
 
 # setup automuteus
 COPY --from=automuteus /app /automuteus
 COPY --from=automuteus /app/locales/ /automuteus/locales/
 COPY --from=automuteus /app/storage/postgres.sql /automuteus/storage/postgres.sql
-VOLUME [/automuteus/logs]
 
 # setup galactus
 COPY --from=galactus /app /galactus
@@ -20,7 +19,6 @@ COPY --from=galactus /app /galactus
 COPY --from=wingman /app /wingman
 
 # setup openresty
-FROM openresty/openresty:alpine
 COPY nginx.conf.erb /usr/local/openresty/nginx/conf/
 
 # setup supervisord
