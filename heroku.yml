@@ -6,7 +6,7 @@ setup:
     DISCORD_BOT_TOKEN:
 build:
   docker:
-    web: app/Dockerfile
+    web: web/Dockerfile
     release: release/Dockerfile
   config:
     AUTOMUTEUS_TAG: latest
