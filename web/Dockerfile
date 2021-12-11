@@ -19,3 +19,8 @@ ENV GALACTUS_PORT="5858"
 
 EXPOSE 80
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+
+# for debug
+RUN apk update \
+  && apk --no-cache add bash curl nodejs \
+  && curl https://cli-assets.heroku.com/install.sh | bash
