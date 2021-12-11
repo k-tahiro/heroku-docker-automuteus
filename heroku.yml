@@ -7,10 +7,9 @@ setup:
 build:
   docker:
     web: app/Dockerfile
+    release: release/Dockerfile
   config:
     AUTOMUTEUS_TAG: latest
     GALACTUS_TAG: latest
 release:
-  image: web
-  command:
-    - ./set_config.sh
+  image: release
