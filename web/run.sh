@@ -8,4 +8,6 @@ export POSTGRES_USER="$(echo ${DATABASE_URL} | cut -d@ -f1 | cut -d: -f2 | cut -
 export POSTGRES_PASS="$(echo ${DATABASE_URL} | cut -d@ -f1 | cut -d: -f3)"
 export REDIS_ADDR="$(echo ${REDIS_URL} | cut -d@ -f2)"
 export REDIS_PASS="$(echo ${REDIS_URL} | cut -d@ -f1 | cut -d: -f3)"
+
+erb nginx.conf.erb >nginx.conf
 /usr/bin/supervisord -c supervisord.conf
