@@ -9,4 +9,5 @@ export REDIS_PASS="$(echo ${REDIS_URL} | cut -d@ -f1 | cut -d: -f3)"
 
 export HOST="https://${HEROKU_APP_NAME}.herokuapp.com"
 
-/usr/bin/supervisord -c /etc/supervisord.conf
+erb nginx.conf.erb >nginx.conf
+/usr/bin/supervisord -c supervisord.conf

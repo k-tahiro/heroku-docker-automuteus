@@ -2,9 +2,6 @@ setup:
   addons:
   - plan: heroku-postgresql:hobby-dev
   - plan: heroku-redis:hobby-dev
-  config:
-    DISCORD_BOT_TOKEN:
-    HEROKU_APP_NAME:
 build:
   docker:
     web: web/Dockerfile
