@@ -2,6 +2,4 @@
 set -ex
 
 APP_ID="$(echo ${HEROKU_RELEASE_STREAM_URL} | cut -d/ -f6)"
-
-env
-echo "${APP_ID}"
+export HOST=$(heroku apps:info -s -a "${APP_ID}" | grep web_url | cut -d= -f2)
