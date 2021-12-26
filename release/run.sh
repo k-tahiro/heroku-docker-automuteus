@@ -2,4 +2,4 @@
 set -ex
 
 APP_ID="$(echo ${HEROKU_RELEASE_STREAM_URL} | cut -d/ -f6)"
-export HOST=$(heroku apps:info -s -a "${APP_ID}" | grep web_url | cut -d= -f2)
+heroku labs:enable runtime-dyno-metadata -a "${APP_ID}"
