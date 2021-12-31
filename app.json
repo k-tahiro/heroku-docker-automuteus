@@ -5,6 +5,9 @@
     },
     {
       "plan": "heroku-redis:hobby-dev"
+    },
+    {
+      "plan": "scheduler:standard"
     }
   ],
   "env": {
