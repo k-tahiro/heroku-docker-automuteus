@@ -1,5 +1,5 @@
 daemon off;
-worker_processes <%= ENV['NGINX_WORKERS'] || 4 %>;
+worker_processes <%= ENV['NGINX_WORKERS'] || 1 %>;
 
 events {}
 http {
