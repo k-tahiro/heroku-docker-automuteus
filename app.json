@@ -11,12 +11,10 @@
     }
   ],
   "env": {
-    "HEROKU_APP_NAME": {
-      "required": true
-    },
     "DISCORD_BOT_TOKEN": {
       "description": "Token for Discord"
-    }
+    },
+    "HEROKU_APP_NAME": {}
   },
   "stack": "container"
 }
