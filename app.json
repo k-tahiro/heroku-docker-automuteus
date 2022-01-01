@@ -17,11 +17,15 @@
     }
   ],
   "env": {
+    "HEROKU_APP_NAME": {
+      "description": "Enter the same app name you entered on top of this page."
+    },
     "DISCORD_BOT_TOKEN": {
       "description": "Token for Discord"
     },
-    "HEROKU_APP_NAME": {
-      "description": "Enter the same app name you entered on top of this page."
+    "BOT_LANG": {
+      "required": false,
+      "value": ""
     }
   },
   "stack": "container"
