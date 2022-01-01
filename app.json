@@ -7,9 +7,6 @@
       "plan": "heroku-redis:hobby-dev"
     },
     {
-      "plan": "librato:development"
-    },
-    {
       "plan": "papertrail:choklad"
     },
     {
