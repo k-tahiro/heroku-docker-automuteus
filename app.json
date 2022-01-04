@@ -5,12 +5,6 @@
     },
     {
       "plan": "heroku-redis:hobby-dev"
-    },
-    {
-      "plan": "papertrail:choklad"
-    },
-    {
-      "plan": "scheduler:standard"
     }
   ],
   "env": {
